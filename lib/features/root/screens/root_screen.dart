@@ -18,6 +18,9 @@ class _RootScreenState extends State<RootScreen> {
   final List<Widget> _screens = const [
     HomeScreen(),
     Center(
+      child: Text('Categories', style: TextStyle(color: Colors.white)),
+    ),
+    Center(
       child: Text('Watch List', style: TextStyle(color: Colors.white)),
     ),
     Center(
@@ -57,8 +60,8 @@ class _RootScreenState extends State<RootScreen> {
               items: [
                 /// Home
                 SalomonBottomBarItem(
-                  icon: const Icon(CupertinoIcons.home),
-                  activeIcon: const Icon(CupertinoIcons.home),
+                  icon: const Icon(Icons.home_outlined),
+                  activeIcon: const Icon(Icons.home),
                   title: const Text('Home'),
                   selectedColor: Colors.blueAccent,
                 ),
@@ -76,6 +79,12 @@ class _RootScreenState extends State<RootScreen> {
                   icon: const Icon(Icons.bookmark_border),
                   activeIcon: const Icon(Icons.bookmark),
                   title: const Text('Watch list'),
+                  selectedColor: Colors.blueAccent,
+                ),
+                SalomonBottomBarItem(
+                  icon: const Icon(CupertinoIcons.person),
+                  activeIcon: const Icon(Icons.person),
+                  title: const Text('Profile'),
                   selectedColor: Colors.blueAccent,
                 ),
               ],

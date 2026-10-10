@@ -9,8 +9,8 @@ class AppTheme {
     scaffoldBackgroundColor: AppColors.primaryColor,
     fontFamily: AppFonts.mainFontName,
     textTheme: TextTheme(
-      titleLarge: AppStyles.primaryMeadLineStyle,
-      titleMedium: AppStyles.subtitleStyle,
+      titleLarge: AppStyles.background,
+      titleMedium: AppStyles.black18boldStyle,
     ),
     buttonTheme: ButtonThemeData(
       buttonColor: AppColors.backgroundColor,

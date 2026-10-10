@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:movie_app/core/styling/app_colors.dart';
+import 'package:movie_app/features/home/widgets/custom_appbar.dart';
 import 'package:movie_app/features/home/widgets/custom_search_bar.dart';
+import 'package:movie_app/features/home/widgets/movies_carousel.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -22,19 +24,11 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             const Gap(25),
-            Align(
-              alignment: Alignment.topLeft,
-              child: Text(
-                'What do you want to watch?',
-                style: TextStyle(
-                  color: AppColors.primaryColor,
-                  fontSize: 18.sp,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
+            CustomAppBar(),
             const Gap(24),
             CustomSearchBar(),
+            const Gap(30),
+            MoviesCarousel(),
           ],
         ),
       ),
